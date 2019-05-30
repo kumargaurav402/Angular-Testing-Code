@@ -1,0 +1,100 @@
+{
+  "users": [
+    {
+      "firstName": "asasasasasa",
+      "email": "asasas@gmail.com",
+      "phone": 121121212121212,
+      "address": "sdsdsdsd",
+      "gender": "",
+      "id": 2
+    },
+    {
+      "firstName": "asasasasasa",
+      "email": "suraj7990@gmail.com",
+      "phone": 9606622481,
+      "address": "gdfdf",
+      "gender": "",
+      "id": 3
+    },
+    {
+      "firstName": "asasasasasa",
+      "email": "suraj7990@gmail.com",
+      "phone": 9606622481,
+      "address": "9606622481",
+      "gender": "",
+      "id": 4
+    },
+    {
+      "firstName": "asasasasasa",
+      "email": "suraj7990@gmail.com",
+      "phone": 9606622481,
+      "address": "",
+      "gender": "",
+      "id": 5
+    },
+    {
+      "firstName": "Suraj Kumar",
+      "email": "suraj7990@gmail.com",
+      "phone": 87737373737,
+      "address": "sdsdsd",
+      "gender": "",
+      "id": 6
+    },
+    {
+      "firstName": "",
+      "email": "",
+      "phone": "",
+      "address": "",
+      "gender": "",
+      "id": 7
+    },
+    {
+      "firstName": "asasasasasa",
+      "email": "suraj7990@gmail.com",
+      "phone": 9606622481,
+      "address": "9606622481",
+      "gender": "",
+      "id": 8
+    },
+    {
+      "firstName": "asasasasasa",
+      "email": "suraj7990@gmail.com",
+      "phone": 9606622481,
+      "address": "9606622481",
+      "gender": "",
+      "id": 9
+    },
+    {
+      "firstName": "Suraj Kumar",
+      "email": "suraj7990@gmail.com",
+      "phone": 9606622481,
+      "address": "#62B,2nd floor,2nd cross Road, opposite Electronics\ncity post\nElectronics city phase 1, Electronics city\nBangalore,Karnataka-560100",
+      "gender": "male",
+      "id": 10
+    },
+    {
+      "firstName": "Suraj Kumar",
+      "email": "suraj7990@gmail.com",
+      "phone": 9606622481,
+      "address": "#62B,2nd floor,2nd cross Road, opposite Electronics\ncity post\nElectronics city phase 1, Electronics city\nBangalore,Karnataka-560100",
+      "gender": "male",
+      "id": 11
+    },
+    {
+      "firstName": "suraj Kumar",
+      "email": "asa@gmail.com",
+      "phone": 1212121211,
+      "address": "#62B,2nd floor,2nd cross Road, opposite Electronics\ncity post\nElectronics city phase 1, Electronics city\nBangalore,Karnataka-560100",
+      "gender": "female",
+      "id": 12
+    },
+    {
+      "firstName": "asasasasasa",
+      "email": "suraj7990@gmail.com",
+      "phone": 9606622481,
+      "address": "#62B,2nd floor,2nd cross Road, opposite Electronics\ncity post\nElectronics city phase 1, Electronics city\nBangalore,Karnataka-560100",
+      "gender": "male",
+      "id": 13
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+<form [formGroup]="UserForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+        <label for="exampleInputfirstname1">first Name</label>
+        <input type="firstName" class="form-control" formControlName="firstName" id="exampleInputfirstname1"
+            aria-describedby="firstNameHelp" placeholder="Enter Your First Name">
+        <small id="firstNameHelp" class="form-text text-muted" style="color:red"
+            *ngIf="UserForm.get('firstName').errors && (UserForm.get('firstName').touched || UserForm.get('firstName').dirsty)">
+            <span *ngIf="UserForm.get('firstName').errors.required">
+                First Name is required
+            </span>
+            <span *ngIf="UserForm.get('firstName').errors.minlength">
+                First Name Should not be less than 10 char
+            </span>
+            <span *ngIf="UserForm.get('firstName').errors.maxlength">
+                First Name Should not be more than 50 character
+            </span>
+        </small>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" formControlName="email" id="exampleInputEmail1"
+            aria-describedby="emailHelp" placeholder="Enter email">
+        <small id="emailHelp" class="form-text text-muted" style="color:red"
+            *ngIf="UserForm.get('email').errors && (UserForm.get('email').touched || UserForm.get('email').dirsty)">
+            <span *ngIf="UserForm.get('email').errors.required">
+                Email id is required
+            </span>
+            <span *ngIf="UserForm.get('email').errors.email">
+                Email id is not valid
+            </span>
+        </small>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPhone">Phone No.</label>
+        <input type="number" class="form-control" formControlName="phone" id="exampleInputPhone"
+            placeholder="Enter phone">
+        <small id="exampleInputPhone" class="form-text text-muted" style="color:red"
+            *ngIf="UserForm.get('phone').errors && (UserForm.get('phone').touched || UserForm.get('phone').dirty)">
+            <span *ngIf="UserForm.get('phone').errors.required">
+                Phone is required
+            </span>
+            <span *ngIf="UserForm.get('phone').errors.maxlength">
+                Phone No. should not be more than 10 character
+            </span>
+
+        </small>
+        <small>
+            <span *ngIf="isNumber" style="color: red">
+                Phone No. can not be longer than 10 character
+            </span>
+        </small>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPhone">Address</label>
+        <textarea class="form-control" formControlName="address" rows="4" cols="50">
+            Enter Address in details
+            </textarea>
+        <small class="form-text text-muted" style="color:red"
+            *ngIf="UserForm.get('address').errors && (UserForm.get('address').touched || UserForm.get('address').dirsty)">
+            <span *ngIf="UserForm.get('address').errors.required">
+                Address is required
+            </span>
+            <span *ngIf="UserForm.get('address').errors.minlength">
+                Address Should be at least 100 char longer
+            </span>
+        </small>
+        <!-- <input type="text" class="form-control" formControlName="address" id="exampleInputPhone" placeholder="Address"> -->
+    </div>
+    <div class="form-group">
+        <label class="control-label">gender</label>
+        <!-- <div class="col-sm-8"> -->
+        <label class="radio-inline">
+            <input type="radio" value="male" formControlName="gender" checked>male
+        </label>
+        <label class="radio-inline">
+            <input type="radio" formControlName="gender" value="female">female
+        </label>
+        <!-- </div> -->
+    </div>
+    <!-- <div class="form-group">
+        <label>Upload Image</label>
+        <div class="input-group">
+            <span class="input-group-btn">
+                <span class="btn btn-default btn-file">
+                    Browse… <input type="file" id="imgInp">
+                </span>
+            </span>
+            <input type="text" formControlName="image" (change)="onFileChange($event)" class="form-control" readonly>
+        </div>
+        <img id='img-upload' />
+    </div> -->
+    <div class="btn-toolbar">
+        <button type="submit" [disabled]="!UserForm.valid" class="btn btn-primary">Submit</button>
+        <button type="button" class="btn btn-primary" (click)="reset()">Reset</button>
+    </div>
+</form>
